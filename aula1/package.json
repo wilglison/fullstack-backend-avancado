@@ -1,0 +1,18 @@
+{
+  "name": "backend-avancado",
+  "version": "1.0.0",
+  "description": "Curso Esp. FullStack UFG - Backend Avançado",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ufg-bakcend-avancado"
+  },
+  "author": "Wilglison",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
