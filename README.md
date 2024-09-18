@@ -10,4 +10,4 @@
 
 - Aluno: Wilglison Rilniky Oliveira dos Santos - wilglison@discente.ufg.br
 
-> [name=Wilglison Rilniky Oliveira dos Santos]
+
