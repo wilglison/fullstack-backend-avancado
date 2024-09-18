@@ -9,22 +9,9 @@ const authController = new AuthController();
 
 userRoutes.post(path, authController.authMiddleware, userController.create);
 userRoutes.get(path, authController.authMiddleware, userController.getAll);
-userRoutes.get(
-  `${path}/:id`,
-  authController.authMiddleware,
-  userController.getById
-);
-userRoutes.delete(
-  `${path}/:id`,
-  userController.verifyIfExists,
-  userController.delete
-);
-userRoutes.put(
-  `${path}/:id`,
-  authController.authMiddleware,
-  userController.update
-);
-
+userRoutes.get(`${path}/:id`, authController.authMiddleware, userController.getById);
+userRoutes.delete(`${path}/:id`, authController.authMiddleware, userController.verifyIfExists, userController.delete);
+userRoutes.put(`${path}/:id`, authController.authMiddleware, userController.update);
 userRoutes.post("/auth", authController.authenticate);
 
 export { userRoutes };

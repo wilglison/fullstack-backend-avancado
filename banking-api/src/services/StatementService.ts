@@ -1,11 +1,8 @@
 import { prisma } from "../prisma";
 
 class StatementService {
-  async deposit(
-    idCheckingAccount: string,
-    amount: number,
-    description: string
-  ) {
+
+  async deposit(idCheckingAccount: string, amount: number, description: string) {
     try {
       if (amount <= 0) {
         throw new Error("Invalid amount.");
@@ -141,11 +138,7 @@ class StatementService {
     }
   }
 
-  private async createDebit(
-    idCheckingAccount: string,
-    amount: number,
-    description: string
-  ) {
+  private async createDebit(idCheckingAccount: string, amount: number, description: string) {
     try {
       if (amount <= 0) {
         throw new Error("Invalid amount.");

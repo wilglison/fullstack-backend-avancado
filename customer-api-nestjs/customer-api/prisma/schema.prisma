@@ -16,7 +16,7 @@ datasource db {
 model Customer {
   id String @id @default(auto()) @map("_id") @db.ObjectId
   name String
-  document String
+  document String @unique 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   
